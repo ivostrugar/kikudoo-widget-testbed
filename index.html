@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kikudoo Widget Testbed</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    header h1 { font-size: 1.2rem; font-weight: 600; }
+    header span { font-size: 0.75rem; background: #e63946; padding: 2px 8px; border-radius: 99px; }
+
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+    }
+
+    .card h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+
+    .dummy-text { line-height: 1.7; color: #444; }
+
+    .placeholder {
+      height: 120px;
+      border: 2px dashed #ccc;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    .tag-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .tag {
+      background: #eef2ff;
+      color: #4f46e5;
+      padding: 4px 12px;
+      border-radius: 99px;
+      font-size: 0.8rem;
+    }
+
+    .widget-slot {
+      border: 2px dashed #4f46e5;
+      border-radius: 8px;
+      padding: 1.5rem;
+      background: #fafafe;
+      min-height: 80px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.78rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kikudoo Widget Testbed</h1>
+    <span>Cross-domain</span>
+  </header>
+
+  <main>
+
+    <div class="card">
+      <h2>Dummy Page Content</h2>
+      <p class="dummy-text">
+        This is a simulated host page for testing cross-domain widget embeds.
+        Paste your <code>&lt;script&gt;</code> tag into the widget slot below
+        and reload the page to see it render in a real cross-origin context.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Sample Article</h2>
+      <p class="dummy-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis
+        egestas. Vivamus tincidunt feugiat metus, at vehicula erat ultrices id.
+        Duis euismod, libero a gravida laoreet, nisl lorem mollis enim.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Widget Slot</h2>
+      <div class="widget-slot" id="widget-container">
+        <!-- Insert your widget script tag here -->
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>More Dummy Content</h2>
+      <div class="placeholder">Image placeholder 800 × 400</div>
+    </div>
+
+    <div class="card">
+      <h2>Tags</h2>
+      <div class="tag-list">
+        <span class="tag">Kinder</span>
+        <span class="tag">Sport</span>
+        <span class="tag">Musik</span>
+        <span class="tag">Kreativität</span>
+        <span class="tag">Tanzen</span>
+        <span class="tag">Kochen</span>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>kikudoo-widget-testbed &mdash; GitHub Pages</footer>
+
+</body>
+</html>
